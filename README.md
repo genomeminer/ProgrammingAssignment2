@@ -11,7 +11,8 @@ the inverse from the cache. If the inverse does not exist or if the original mat
 changed the inverse is computed all over again 
 
 
-##makeCacheMatrix function allows for initializing a matrix, getting the matrix, 
+##makeCacheMatrix 
+This function allows for initializing a matrix, getting the matrix, 
 initializing a inverse matrix and getting the inverse Matrix. Although the 
 setInverse is not necessary it has added to be similar to the example
 
