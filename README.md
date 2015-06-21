@@ -14,7 +14,7 @@ changed the inverse is computed all over again
 ###makeCacheMatrix 
 This function allows for initializing a matrix, getting the matrix, 
 initializing a inverse matrix and getting the inverse Matrix. Although the 
-setInverse is not necessary it has added to be similar to the example
+setInverse is not necessary it has added to be similar to the example provided in the homework description
 
 <!-- -->
     makeCacheMatrix <- function(x = matrix()) {
