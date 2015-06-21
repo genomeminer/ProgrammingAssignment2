@@ -1,7 +1,7 @@
 ### Introduction
 
 The functions have been developed similar to the example provided for this assignment 
-This file has two functions 'makeCacheMatrix' and 'cacheSolve'. 
+This file has two functions **makeCacheMatrix** and **cacheSolve**. 
 **makeCacheMatrix**
 allow for initializing a matrix, getting the matrix, initializing a 
 inverse matrix and getting the inverse Matrix. 
@@ -28,6 +28,7 @@ setInverse is not necessary it has added to be similar to the example provided i
             getInverse <- function() inv  
             list(getMatrix=getMatrix,setMatrix=setMatrix,setInverse=setInverse,getInverse=getInverse)
 }
+
 **Usage:**
 
 d$getMatrix()
