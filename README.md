@@ -30,8 +30,11 @@ setInverse is not necessary it has added to be similar to the example provided i
 }
 **Usage:**
 d$getMatrix()
+
 d<-makeCacheMatrix(matrix(c(3,5,6,9,4,8,8,3,7),3,3))
+
 d$setInverse(matrix(c(1:9),3,3))
+
 d$getInverse()
 
 ### cacheSolve
@@ -53,7 +56,8 @@ changed the inverse is computed all over again
             inv                
     }
 
-
+**Usage:**
+cacheSolve(d)
 
 
 
