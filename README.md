@@ -2,9 +2,11 @@
 
 The functions have been developed similar to the example provided for this assignment 
 This file has two functions 'makeCacheMatrix' and 'cacheSolve'. 
-**makeCacheMatrix** allow for initializing a matrix, getting the matrix, initializing a 
+**makeCacheMatrix**
+allow for initializing a matrix, getting the matrix, initializing a 
 inverse matrix and getting the inverse Matrix. 
-**cacheSolve** checks the cache for the inverse. If the inverse exists the it returns 
+**cacheSolve** 
+checks the cache for the inverse. If the inverse exists the it returns 
 the inverse from the cache. If the inverse does not exist or if the original matrix 
 changed the inverse is computed all over again 
 
@@ -27,11 +29,6 @@ setInverse is not necessary it has added to be similar to the example
 }
 
 
-            data <- x$get()
-            m <- mean(data, ...)
-            x$setmean(m)
-            m
-    }
 
 
 
