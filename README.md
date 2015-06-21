@@ -11,7 +11,7 @@ the inverse from the cache. If the inverse does not exist or if the original mat
 changed the inverse is computed all over again 
 
 
-#makeCacheMatrix 
+###makeCacheMatrix 
 This function allows for initializing a matrix, getting the matrix, 
 initializing a inverse matrix and getting the inverse Matrix. Although the 
 setInverse is not necessary it has added to be similar to the example
@@ -29,6 +29,24 @@ setInverse is not necessary it has added to be similar to the example
             list(getMatrix=getMatrix,setMatrix=setMatrix,setInverse=setInverse,getInverse=getInverse)
 }
 
+### cacheSolve
+checks the cache for the inverse. If the inverse exists the it returns 
+the inverse from the cache. If the inverse does not exist or if the original matrix 
+changed the inverse is computed all over again
+
+<!-- -->
+    cacheSolve <- function(x, ...) {
+            ## Return a matrix that is the inverse of 'x'
+            inv <- x$getInverse()
+            if(!is.null(inv)) {   
+                    message("getting the cached inverse")
+                    return(inv)
+            }
+            mat<-x$getMatrix()  
+            inv <- solve(mat)  
+            x$setInverse(inv)  
+            inv                
+    }
 
 
 
